@@ -84,6 +84,12 @@ CREATE TABLE transfer (
     operation VARCHAR(50) NOT NULL,
     CONSTRAINT fk_transfer_account FOREIGN KEY (account_number) REFERENCES account (account_number) ON DELETE CASCADE
 );
+
+CREATE TABLE user ( 
+    id UUID PRIMARY KEY, 
+    app_user VARCHAR(255) NOT NULL, 
+    app_password VARCHAR(255) NOT NULL 
+);
 ```
 
 ### 3. Insert Sample Data
@@ -135,6 +141,9 @@ INSERT INTO extract (id, account_number, amount_total, amount_operation, date, o
 ('69cf3ec1-a8f2-43e7-8a1e-07c4a7e0e33c', 192873, 2000.00, -300.00, '2024-09-10 19:40:00', 'Withdraw');
 ```
 
-## License
+#### Users:
 
-This project is licensed under the MIT License.
+```sql
+INSERT INTO user (id, app_user, app_password) VALUES 
+('681c21bd-d345-4564-ada8-a49f7ecd2058', 'admin', 'admin');
+```
