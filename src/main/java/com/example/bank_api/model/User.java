@@ -2,7 +2,6 @@ package com.example.bank_api.model;
 
 
 import jakarta.persistence.*;
-
 import java.util.UUID;
 
 @Entity

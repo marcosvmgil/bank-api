@@ -2,7 +2,6 @@ package com.example.bank_api.controller;
 
 
 import com.example.bank_api.model.Account;
-import com.example.bank_api.model.Extract;
 import com.example.bank_api.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

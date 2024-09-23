@@ -1,6 +1,5 @@
 package com.example.bank_api.service;
 
-import com.example.bank_api.model.Extract;
 import com.example.bank_api.repository.AccountRepository;
 import com.example.bank_api.model.Account;
 import org.springframework.beans.factory.annotation.Autowired;

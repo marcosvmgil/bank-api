@@ -1,6 +1,5 @@
 package com.example.bank_api.repository;
 
-import com.example.bank_api.model.Deposit;
 import com.example.bank_api.model.Extract;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
